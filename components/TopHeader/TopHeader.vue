@@ -18,7 +18,7 @@ import { topheaderSelect } from '../../constants/topheaderSelect';
                     </div>
                     <div>
                         <button
-                            class="bg-[#0D6EFD] h-full text-white px-[23px] py-[6px] hover:bg-[#0045ab] duration-300 rounded-[1px]">Search</button>
+                            class="bg-[#0D6EFD] text-white px-[23px] py-[6px] hover:bg-[#0045ab] duration-300 rounded-[1px]">Search</button>
                     </div>
                 </div>
                 <div class="grid grid-cols-4 gap-[20px]">

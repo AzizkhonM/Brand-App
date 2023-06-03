@@ -9,12 +9,12 @@ import { headerCountries } from "../../constants/headerCountries"
         <div class="mx-auto container" style="font-family: 'Inter'">
             <div class="flex items-center justify-between">
                 <div class="grid grid-cols-6 gap-[25px] items-center font-medium">
-                    <div class="text-[16px]">All category</div>
-                    <div class="text-[16px]">Hot offers</div>
-                    <div class="text-[16px]">Gift boxes</div>
-                    <div class="text-[16px]">Projects</div>
-                    <div class="text-[16px]">Menu item</div>
-                    <div class="text-[16px]">
+                    <div class="text-[16px] hover:cursor-pointer">All category</div>
+                    <div class="text-[16px] hover:cursor-pointer">Hot offers</div>
+                    <div class="text-[16px] hover:cursor-pointer">Gift boxes</div>
+                    <div class="text-[16px] hover:cursor-pointer">Projects</div>
+                    <div class="text-[16px] hover:cursor-pointer">Menu item</div>
+                    <div class="text-[16px] hover:cursor-pointer">
                         <select name="" id="" class="bg-white outline-none border-none hover:cursor-pointer">
                             <option value="">Help</option>
                         </select>
