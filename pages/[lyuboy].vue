@@ -4,6 +4,7 @@
 
 
 <template>
+    <Header />
     <div class="bg-white">
         <div class="container mx-auto h-[450px] flex justify-center items-center">
             <img src="404.png" width="400" alt="">

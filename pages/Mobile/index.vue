@@ -15,6 +15,7 @@ onMounted(() => {
 
 
 <template>
+    <Header />
     <div class="bg-[#F7FAFC]" style="font-family: 'Inter'">
         <div class="container mx-auto">
             <div class="flex justify-start items-center py-[23px] text-[#8B96A5]">
@@ -40,13 +41,13 @@ onMounted(() => {
                                 <option value="Featured">Featured</option>
                             </select>
                             <div class="border-[1px] border-[#DEE2E7] rounded-[6px]">
-                                <i class='p-[12px] bg-[#dbdee2] bx bxs-category border-r-[0.5px] border-[#DEE2E7]'></i>
-                                <i class='p-[12px] hover:bg-[#BDBDBD] duration-300 hover:cursor-pointer bx bx-menu border-[#DEE2E7] border-l-[0.5px]'></i>
+                                <i class='p-[12px] bg-[#EFF2F4] bx bxs-category border-r-[0.5px] border-[#DEE2E7]'></i>
+                                <i class='p-[12px] hover:bg-[#EFF2F4] duration-300 hover:cursor-pointer bx bx-menu border-[#DEE2E7] border-l-[0.5px]'></i>
                             </div>
                         </div>
                     </div>
                     <div class="flex items-center gap-[10px] mb-[18px]">
-                        <div v-for="el in filters" class="flex items-center px-[12px] py-[8px] text-[18px] gap-[11px] border-[1px] border-[#0d6efd] rounded-[6px] bg-white">{{ el }} <i class='bx bx-x'></i></div>
+                        <div v-for="el in filters" class="flex items-center px-[12px] py-[8px] text-[18px] gap-[11px] border-[1px] border-[#0d6efd] rounded-[6px] bg-white">{{ el }} <i class='bx bx-x hover:cursor-pointer'></i></div>
                         <h1 class="text-[18px] text-[#0D6EFD] ml-[10px]">Clear all filter</h1>
                     </div>
                     <div style="display: grid; grid-template-columns: 32.2% 32.2% 32.2%;" class="mb-[18px] gap-[20px]">
@@ -68,13 +69,13 @@ onMounted(() => {
                         </div>
                     </div>
                     <div class="flex justify-end items-center mb-[180px] gap-[20px]">
-                        <select class="border-[1px] border-[#DEE2E7] rounded-[6px]" name="" id="">
+                        <select class="border-[1px] border-[#DEE2E7] rounded-[6px] hover:cursor-pointer" name="" id="">
                             <option value="Show 10">Show 10</option>
                             <option value="Show 20">Show 20</option>
                             <option value="Show 50">Show 50</option>
                             <option value="Show 100">Show 100</option>
                         </select>
-                        <div class="flex items-center h-[42px] border-[1px] border-[#dee2e7] bg-white">
+                        <div class="flex items-center h-[42px] border-[1px] border-[#dee2e7] bg-white rounded-[6px]">
                             <div class="border-r-[1px] border-[#dee2e7] px-[20px] py-[10px] hover:cursor-not-allowed"><i class='bx bx-chevron-left text-[#8B96A5]' ></i></div>
                             <div class="border-r-[1px] border-[#dee2e7] px-[20px] py-[10px] bg-[#EFF2F4]">1</div>
                             <div class="border-r-[1px] border-[#dee2e7] px-[20px] py-[10px] hover:bg-[#EFF2F4] duration-300 hover:cursor-pointer">2</div>

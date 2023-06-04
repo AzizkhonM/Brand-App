@@ -5,7 +5,6 @@
 <template>
     <div>
     <TopHeader />
-    <Header />
     <slot />
     <Footer />
     </div>

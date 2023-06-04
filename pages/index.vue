@@ -25,6 +25,7 @@ setInterval(() => {
 
 
 <template>
+    <Header />
     <div class="bg-[#F7FAFC] py-[20px]" style="font-family: 'Inter'">
         <div class="container mx-auto">
             <div class="flex mb-[30px] rounded-[6px] border-[1px] bg-white py-[19px] px-[13px]">
@@ -37,9 +38,9 @@ setInterval(() => {
                 <div class="banner mr-[20px] w-[825px] pt-[53px] pl-[43px]">
                     <h1 class="text-[#1C1C1C] text-[28px]">Latest Trending</h1>
                     <h1 class="text-[#1C1C1C] text-[32px] font-bold mb-[17px]">Electronic items</h1>
-                    <button
+                    <nuxt-link to="/mobile"><button
                         class="font-medium text-[#1C1C1C] py-[10px] px-[16px] rounded-[6px] bg-white hover:shadow-lg duration-300">Learn
-                        more</button>
+                        more</button></nuxt-link>
                 </div>
                 <div class="w-auto gap-[17px] items-center" style="display: grid; grid-template-columns: 100%;">
                     <div class="rounded-[6px] p-[10px] bg-[#E3F0FF] w-[100%]">

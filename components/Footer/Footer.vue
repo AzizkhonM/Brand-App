@@ -11,7 +11,7 @@ import { footerMarkets } from "../../constants/footerMarkets"
     <div class="container mx-auto" style="font-family: 'Inter'">
         <div class="py-[43px]" style="display: grid; grid-template-columns: 30% 14% 14% 14% 14% 14% ;">
             <div class="w-[280px]">
-                <img src="BrandLogo.png" class="mb-[18px]" alt="">
+                <nuxt-link to="/"><img src="BrandLogo.png" class="mb-[18px]" alt=""></nuxt-link>
                 <h1 class="text-[#505050] mb-[18px]">Best information about the company gies here but now lorem ipsum is</h1>
                 <div class="flex gap-[12px]">
                     <i class="rounded-full p-[6px] bg-[#BDC4CD] text-[18px] text-white duration-300 hover:cursor-pointer hover:bg-[#3b5998] bx bxl-facebook"></i>
