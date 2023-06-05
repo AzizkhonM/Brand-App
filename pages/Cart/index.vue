@@ -22,38 +22,9 @@ for (let i of cart) {
                         <div
                             class="mb-[32px] border-[1px] border-[#DEE2E7] rounded-[6px] bg-white py-[24px] px-[21px] grid grid-cols-1">
 
-                            <div v-for="el in cart" style="display: grid; grid-template-columns: 10% 70% 20%;"
+                            <div v-for="product in cart" style="display: grid; grid-template-columns: 10% 70% 20%;"
                                 class="gap-[15px] border-b-[1px] py-[21px] border-[#DEE2E7]">
-                                <div
-                                    class=" max-h-[90px] border-[1px] border-[#DEE2E7] rounded-[10px] p-[7px] flex justify-center items-center">
-                                    <img :src="el.img" alt="">
-                                </div>
-                                <div class="grid grid-cols-1 text-[18px]">
-                                    <h1 class="font-medium text-[#1C1C1C] ">{{ el.title }}</h1>
-                                    <div class="text-[#8B96A5] flex items-center justify-start gap-[25px]">
-                                        <h1>Size: {{ el.size }}</h1>
-                                        <h1>Color: {{ el.color }}</h1>
-                                        <h1>Material: {{ el.material }}</h1>
-                                    </div>
-                                    <h1 class="text-[#8B96A5] mb-[20px]">Seller: {{ el.seller }}</h1>
-                                    <div class="flex items-center gap-[15px]">
-                                        <button
-                                            class="py-[11px] px-[14px] border-[1px] border-[#DEE2E7] rounded-[6px] text-[#FA3434] hover:bg-[#FA3434] hover:text-white duration-300 hover:cursor-pointer">Remove</button>
-                                        <button
-                                            class="py-[11px] px-[14px] border-[1px] border-[#DEE2E7] rounded-[6px] text-[#0D6EFD] hover:bg-[#0D6EFD] hover:text-white duration-300 hover:cursor-pointer">Save
-                                            for later</button>
-                                    </div>
-                                </div>
-                                <div class="grid grid-cols-1  w-[85%]">
-                                    <div class="flex justify-end">
-                                        <h1 class="font-medium text-[18px]">${{ el.price }}</h1>
-                                    </div>
-                                    <select
-                                        class="border-[1px] border-[#DEE2E7] rounded-[6px] py-[13px] px-[12px] h-[52px] w-auto"
-                                        name="" id="">
-                                        <option value="">Qty: {{ el.quantity }}</option>
-                                    </select>
-                                </div>
+                                <Cart :product="product" />
                             </div>
 
                             <div class="flex justify-between mt-[22px]">
@@ -66,13 +37,8 @@ for (let i of cart) {
                             </div>
                         </div>
                         <div style="display: grid; grid-template-columns: 33% 33% 33%;" class="mb-[25px]">
-                            <div v-for="el in underCart" class="flex items-center">
-                                <i :class="el.icon"
-                                    class='h-[55px] text-[24px] flex justify-center items-center w-[55px] rounded-full text-[#8B96A5] bg-[#DEE2E7]'></i>
-                                <div class="grid grid-cols-1 ml-[20px] text-[18px]">
-                                    <h1>{{ el.title }}</h1>
-                                    <h1 class="text-[#A9ACB0]">Have you ever finally just</h1>
-                                </div>
+                            <div v-for="card in underCart" class="flex items-center">
+                                <UnderCart :card="card" />
                             </div>
                         </div>
                     </div>
@@ -113,7 +79,9 @@ for (let i of cart) {
                             <button
                                 class="w-full bg-[#00B517] text-white text-[18px] py-[19px] rounded-[8px] hover:bg-[#006a0e] duration-300">Checkout</button>
                             <div class="flex items-center justify-center py-[20px] gap-[15px]">
-                                <img v-for="el in pay" :src="el + '.png'" width="45" height="30" alt="">
+                                <div v-for="el in pay">
+                                    <Pay :el="el" />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -122,10 +90,7 @@ for (let i of cart) {
                     <h1 class="font-semibold text-[22px] mb-[25px]">Saved for later</h1>
                     <div style="display: grid; grid-template-columns: 23.8% 23.8% 23.8% 23.8%;" class="gap-[23px]">
                         <div v-for="el in saved">
-                            <img class="mb-[12px]" :src="el.img" width="100%" alt="">
-                            <h1 class="font-semibold text-[20px] mb-[12px]">${{ el.price }}</h1>
-                            <h1 class="w-[240px] text-[#606060] text-[18px] mb-[15px]">{{ el.title }}</h1>
-                            <button class="border-[1px] border-[#DEE2E7] rounded-[6px] py-[14px] px-[19px] flex items-center gap-[7.5px] text-[#0D6EFD] hover:bg-[#0D6EFD] duration-300 hover:text-white"><i class='bx bx-cart text-[23px]' ></i> Move to cart</button>
+                            <Saved :el="el" />
                         </div>
                         
                     </div>

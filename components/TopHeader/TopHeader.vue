@@ -8,7 +8,7 @@ import { topheaderSelect } from '../../constants/topheaderSelect';
         <div class="mx-auto container" style="font-family: 'Inter'">
             <div class="flex py-[23px] items-center justify-between">
                 <nuxt-link to="/"><img src="BrandLogo.png" alt=""></nuxt-link>
-                <div class="h-[40px] flex border-[2px] rounded-[6px] border-[#0D6EFD] items-center">
+                <div class="searchselect h-[40px] flex border-[2px] rounded-[6px] border-[#0D6EFD] items-center">
                     <div class="px-[9px] border-r-[1px] border-[#0D6EFD] h-[100%]"><input
                             class="outline-none w-[404px] h-full border-none" type="text" placeholder="Search"></div>
                     <div class="border-r-[1px] border-[#0D6EFD] h-[100%]">
@@ -25,23 +25,23 @@ import { topheaderSelect } from '../../constants/topheaderSelect';
                     <div
                         class="grid grid-cols-1 gap-[7px] text-[#8B96A5] hover:text-black hover:cursor-pointer duration-300 place-content-center">
                         <i class='bx bxs-user text-[20px] text-center'></i>
-                        <h1 class="text-center">Profile</h1>
+                        <h1 class="text lg:text-[10px] xl:text-[16px] text-center">Profile</h1>
                     </div>
                     <div
                         class="grid grid-cols-1 gap-[7px] text-[#8B96A5] hover:text-black hover:cursor-pointer duration-300 place-content-center">
                         <i class='bx bx-message-detail text-[20px] text-center'></i>
-                        <h1 class="text-center">Message</h1>
+                        <h1 class="text lg:text-[10px] xl:text-[16px] text-center">Message</h1>
                     </div>
                     <div
                         class="grid grid-cols-1 gap-[7px] text-[#8B96A5] hover:text-black hover:cursor-pointer duration-300 place-content-center">
                         <i class='bx bxs-heart text-[20px] text-center'></i>
-                        <h1 class="text-center">Orders</h1>
+                        <h1 class="text lg:text-[10px] xl:text-[16px] text-center">Orders</h1>
                     </div>
                     <nuxt-link to="/cart">
                         <div
                             class="grid grid-cols-1 gap-[7px] text-[#8B96A5] hover:text-black hover:cursor-pointer duration-300 place-content-center">
                             <i class='bx bx-cart-alt text-[21px] text-center'></i>
-                            <h1 class="text-center">My Cart</h1>
+                            <h1 class="text lg:text-[10px] xl:text-[16px] text-center">My Cart</h1>
                         </div>
                     </nuxt-link>
                 </div>
@@ -51,6 +51,18 @@ import { topheaderSelect } from '../../constants/topheaderSelect';
 </template>
 
 
-<style>/* h1{
-        color: #0045ab
-    } */</style>
+<style>
+
+    @media screen and (max-width: 1024px) {
+        .searchselect{
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 500px){
+        .text{
+            font-size: 12px;
+        }
+    }
+
+</style>

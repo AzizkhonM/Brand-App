@@ -22,6 +22,7 @@ export default defineNuxtConfig({
 
           link: [
             {rel: "stylesheet", href: "https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"},
+            {rel: "stylesheet", href: "https://unpkg.com/aos@2.3.1/dist/aos.css"},
             {rel: "icon", href: "Logo.png"},
             {rel: "preconnect", href: "https://fonts.googleapis.com"},
             {rel: "preconnect", href: "https://fonts.gstatic.com"},
