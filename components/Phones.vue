@@ -6,7 +6,7 @@ console.log(phone);
 
 <template>
     <div class="bg-white rounded-[6px] grid grid-cols-1 hover:cursor-pointer">
-        <div class="flex justify-center border-b-[1px]"><img height="260" width="260" :src="phone" alt=""></div>
+        <div class="flex justify-center border-b-[1px]"><img height="260" width="260" :src="'/' + phone" alt=""></div>
         <div class="py-[20px] px-[22px]" style="display: grid; grid-template-columns: 70% 30%;">
             <div>
                 <div class="flex justify-start items-center gap-[10px] mb-[11px]">

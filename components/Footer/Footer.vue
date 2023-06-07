@@ -11,7 +11,7 @@ import { footerMarkets } from "../../constants/footerMarkets"
     <div class="container mx-auto" style="font-family: 'Inter'">
         <div class="foot py-[43px]">
             <div class="w-[280px] first">
-                <nuxt-link to="/"><img src="BrandLogo.png" class="mb-[18px]" alt=""></nuxt-link>
+                <nuxt-link to="/"><img src="/BrandLogo.png" class="mb-[18px]" alt=""></nuxt-link>
                 <h1
                     class="text-[#505050] xl:w-[100%] md:w-[70%] sm:text-[16px] text-[10px] w-[60%] sm:w-[60%] lg:w-[80%] mb-[18px]">
                     Best information about the
@@ -55,7 +55,7 @@ import { footerMarkets } from "../../constants/footerMarkets"
             </div>
             <div>
                 <h1 class="font-medium mb-[10px] md:text-[16px] text-[13px]">Get App</h1>
-                <img v-for="el in footerMarkets" class="mb-[10px]" :src="el" alt="">
+                <img v-for="el in footerMarkets" class="mb-[10px]" :src="'/' + el" alt="">
             </div>
         </div>
     </div>

@@ -13,7 +13,7 @@
         </div>
         <div class="flex justify-between card">
             <h1 class="lg:text-[19px] text-[8px] text-[#8B96A5] homeprice">From ${{ card.price }}</h1>
-            <img :src="card.img" alt="" style="margin-right: 10px; margin-bottom: 10px;">
+            <img :src="'/' + card.img" alt="" style="margin-right: 10px; margin-bottom: 10px;">
         </div>
     </div>
 </template>

@@ -5,7 +5,7 @@
 
 <template>
     <div class=" max-h-[90px] border-[1px] border-[#DEE2E7] rounded-[10px] p-[7px] flex justify-center items-center">
-        <img :src="product.img" alt="">
+        <img :src="'/' + product.img" alt="">
     </div>
     <div class="grid grid-cols-1 text-[18px]">
         <h1 class="font-medium text-[#1C1C1C] ">{{ product.title }}</h1>

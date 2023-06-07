@@ -47,7 +47,7 @@ setInterval(() => {
                 <div class="w-auto gap-[17px] items-center hi">
                     <div class="rounded-[6px] p-[10px] bg-[#E3F0FF] w-[100%]">
                         <div class="flex gap-[20px] mb-[25px] justify-start items-center">
-                            <img src="Avatar.png" width="60" alt="">
+                            <img src="/Avatar.png" width="60" alt="">
                             <h1 class="tracking-[1px] text-[22px] w-[140px]">Hi, user let’s get stated</h1>
                         </div>
                         <div class="mb-[7px]">
@@ -150,7 +150,7 @@ setInterval(() => {
             <div class="gap-[23px] mb-[18px] items">
                 <div v-for="el in recommendations" class="recitemcard border-[1px] p-[20px] rounded-[6px] bg-white hover:cursor-pointer">
                     <div class="w-full flex justify-center mb-[17px]">
-                        <img :src="el.img" width="250" alt="">
+                        <img :src="'/' + el.img" width="250" alt="">
                     </div>
                     <h1 class="font-medium text-[18px]">${{ el.price }}</h1>
                     <h1 class="w-full text-[#8B96A5] text-[18px]">{{el.title}}</h1>

@@ -5,7 +5,7 @@
 
 
 <template>
-    <img :src="el + '.png'" width="45" height="30" alt="">
+    <img :src="'/' + el + '.png'" width="45" height="30" alt="">
 </template>
 
 

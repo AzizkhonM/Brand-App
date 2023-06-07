@@ -7,13 +7,13 @@ import { topheaderSelect } from '../../constants/topheaderSelect';
     <div class="border border-b-[1px]">
         <div class="mx-auto container" style="font-family: 'Inter'">
             <div class="flex py-[23px] items-center justify-between">
-                <nuxt-link to="/"><img src="BrandLogo.png" alt=""></nuxt-link>
+                <nuxt-link to="/"><img src="/BrandLogo.png" alt=""></nuxt-link>
                 <div class="searchselect h-[40px] flex border-[2px] rounded-[6px] border-[#0D6EFD] items-center">
                     <div class="px-[9px] border-r-[1px] border-[#0D6EFD] h-[100%]"><input
                             class="outline-none w-[404px] h-full border-none" type="text" placeholder="Search"></div>
                     <div class="border-r-[1px] border-[#0D6EFD] h-[100%]">
                         <select class="bg-white hover:cursor-pointer h-full w-full outline-none border-none focus:outline-none" name="categories" id="">
-                            <option v-for="el in topheaderSelect" :key="el.id" :value="el.title"><img src="Logo.png" alt="">{{ el.title }}</option>
+                            <option v-for="el in topheaderSelect" :key="el.id" :value="el.title"><img src="/Logo.png" alt="">{{ el.title }}</option>
                         </select>
                     </div>
                     <div>
